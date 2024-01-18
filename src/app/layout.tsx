@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { AOSInit } from '@/components/aos'
+import Navbar from '@/components/navigation/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <AOSInit/>
+      <body className={`${inter.className} scroll-smooth`}>
+      <Navbar/>
+      <div className="fixed bg-blue-400 rounded-full opacity-50 top-10 left-4 h-72 w-72 blur-3xl filter md:h-96 md:w-96"></div>
+      <div className="fixed right-0 bg-yellow-200 rounded-full opacity-30 top-10 h-72 w-72 blur-3xl filter md:h-96 md:w-96"></div>
+      <div
+        className={`fixed top-96 right-20 h-72 w-72 md:h-96  md:w-96 bg-indigo-500 rounded-full  opacity-50 blur-3xl filter`}
+      ></div>
+        {children}
+      </body>
     </html>
   )
 }
