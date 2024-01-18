@@ -19,8 +19,8 @@ const getEducation = async() => {
   return res;
 }
 
-const Education = async() => {
-  const education = await getEducation();
+const Education = () : JSX.Element => {
+  const education = getEducation();
   const data = [
     {
       id: 1,
