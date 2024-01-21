@@ -99,9 +99,34 @@ const data = [
   },
 ];
 
+interface SelectedData {
+  id: number;
+  name: string;
+  image: string;
+  tool: Tool[];
+  description: string;
+  linkRepoFe: string;
+  linkRepoBe: string;
+  linkRepoFsw: string;
+}
+
+interface Tool {
+  name: string;
+  image: string;
+}
+
 const Portofolio = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedData, setSelectedData] = useState({});
+  const [selectedData, setSelectedData] = useState<SelectedData>({
+    id: 0,
+    name: "",
+    image: "",
+    tool: [],
+    description: "",
+    linkRepoFe: "",
+    linkRepoBe: "",
+    linkRepoFsw: "",
+  });
   const handleOpen = (data: any) => {
     setSelectedData(data)
     setIsOpen(true);
