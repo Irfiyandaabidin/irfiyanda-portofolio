@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 import RocketSharp from '@mui/icons-material/RocketSharp'
 import { Link } from 'react-scroll';
 
-const pages = ['home', 'about', 'skills', 'education', 'experience'];
+const pages = ['home', 'about', 'skills', 'education', 'experience', 'portofolio'];
 const settings = ['Dashboard', 'Logout'];
 
 function Navbar() {
@@ -38,13 +38,13 @@ function Navbar() {
   };
 
   return (
-    <div className='bg-blue-50 my-3 mx-3 md:mx-5 md:my-5 rounded-md shadow-lg overflow-hidden'>
+    <div className='bg-blue-100 my-3 mx-3 md:mx-5 md:my-5 rounded-md shadow-lg overflow-hidden'>
       <AppBar 
         color='transparent'
         style={{
           width: "93.5%",
           right: "3.2%",
-          marginTop: '10px',
+          marginTop: '15px',
           borderRadius: "30px",
           backdropFilter: 'blur(10px) brightness(100%)',
         }}

@@ -55,7 +55,7 @@ const Skills = () => {
     },
   ]
   return (
-    <div className='pt-5' id='skills'>
+    <div className='pt-16 md:pt-5' id='skills'>
       <div className='flex flex-col items-center'>
         <button className='bg-slate-400 px-3 py-2 rounded-lg text-white text-lg'>Skills</button>
         <div className='flex flex-col p-10 lg:py-12 items-center'>
@@ -66,7 +66,7 @@ const Skills = () => {
             {data.map(skill => (
               <div key={skill.id} className='flex items-center flex-col md:p-3 bg-transparent shadow-lg md:bg-none md:shadow-none rounded-md'>
                 <div data-aos='fade-up' className="relative group w-10 h-10 md:w-16 md:h-16 pt-1">
-                  <Image className='absolute group-hover:scale-125' alt={skill.name} src={skill.url} objectFit='cover' layout='fill'/>
+                  <Image className='absolute group-hover:scale-125 ease-in duration-300' alt={skill.name} src={skill.url} objectFit='cover' layout='fill'/>
                 </div>
                 <p data-aos='fade-up' className='py-1 md:pt-3 text-sm'>{skill.name}</p>
               </div>

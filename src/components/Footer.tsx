@@ -4,7 +4,7 @@ import { GitHub, Instagram, LinkedIn } from '@mui/icons-material'
 
 const Footer = () => {
   return (
-    <div className='px-5 flex flex-col gap-6 py-10 mt-10 md:gap-14 lg:gap-32 md:flex-row justify-center bg-purple-50 shadow-inner bottom-0'>
+    <div className='px-5 flex flex-col gap-6 py-10 md:gap-14 lg:gap-32 md:flex-row justify-center bg-purple-100 shadow-inner bottom-0'>
       <div>
         <h3 className='font-extrabold'>Irfiyanda Abidin</h3>
         <p className='font-semibold'>Junior Fullstack Developer</p>
@@ -28,6 +28,7 @@ const Footer = () => {
           <li>Skills</li>
           <li>Education</li>
           <li>Experience</li>
+          <li>Portofolio</li>
         </ul>
       </div>
       <div>

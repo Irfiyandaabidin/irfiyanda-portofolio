@@ -6,7 +6,7 @@ const Experience = () => {
     {
       id: 1,
       position: 'Backend Developer Intern',
-      description: 'Pembuatan API menggunakan framework Spring Boot dengan bahasa Kotlin, Berpartisipasi dalam diskusi dengan System Analyst untuk memastikan pemahaman yang mendalam tentang kebutuhan sistem dan API yang dikembangkan.',
+      description: 'Creating an API using the Spring Boot framework with the Kotlin language, Participating in discussions with a System Analyst to ensure a deep understanding of system requirements and the developed API.',
       start_date: '2023-07',
       end_date: '2023-10',
       company: 'Berijalan Techno Center',
@@ -14,13 +14,13 @@ const Experience = () => {
     }
   ]
   return (
-    <div className='bg-slate-50 pt-5' id='experience'>
+    <div className='bg-slate-100 pt-5' id='experience'>
       <div className='flex flex-col items-center'>
         <button className='bg-slate-400 px-3 py-2 rounded-lg text-white text-lg'>Experience</button>
         <div className='flex p-10 lg:py-12 items-center justify-center flex-col'>
           <p>this is quick summary my recent experience</p>
           {data.map(experience => (
-            <div key={experience.id} className='w-full gap-10 mt-5 md:my-10 md:w-3/4 lg:w-1/2 rounded-md shadow-xl md:flex bg-slate-50'>
+            <div key={experience.id} className='w-full gap-10 mt-5 md:my-10 md:w-3/4 rounded-md shadow-xl md:flex bg-slate-100'>
               <div data-aos='fade-up' className='w-full md:w-1/3 flex justify-center items-center'>
                 <div className="relative w-1/2 aspect-square justify-center items-center">
                   <Image className='w-12 h-7' src={experience.image_company} layout='fill' alt={experience.company}/>

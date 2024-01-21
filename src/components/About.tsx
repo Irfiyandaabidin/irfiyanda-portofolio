@@ -4,12 +4,12 @@ import Fotoku from '../../public/fotoku.jpeg'
 
 const About = () => {
   return (
-    <div className='py-5 h-screen bg-slate-50 pt-5' id='about'>
+    <div className='py-5 h-screen bg-slate-100 pt-5' id='about'>
       <div className='flex justify-center items-center'>
         <button className='bg-slate-400 top-32 px-3 py-2 rounded-lg text-white text-lg'>About Me</button>
       </div>
-      <div className='overflow-hidden h-full flex flex-col items-center py-10 lg:py-20 lg:flex-row gap-5 lg:gap-48 mx-auto justify-center container px-4 md:py-20 md:px-8 max-w-7xl'>
-        <div data-aos='fade-right' className='mx-auto relative w-80 h-96 lg:w-400 lg:h-480 overflow-hidden rounded-lg'>
+      <div className='overflow-hidden h-full md:flex md:flex-col items-center py-10 lg:py-20 lg:flex-row gap-5 lg:gap-48 mx-auto justify-center container px-4 md:py-20 md:px-8 max-w-7xl'>
+        <div data-aos='fade-right' className=' mx-auto relative w-3/4 h-1/2 lg:w-1/4 overflow-hidden rounded-md'>
           <Image className='hover:scale-125 ease-in duration-300' alt='foto irfiyanda' layout='fill' objectFit='cover' src={Fotoku} />
         </div>
         <div data-aos='fade-left' className='lg:w-1/2'>
