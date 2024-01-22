@@ -84,7 +84,7 @@ const data = [
         image: "https://ik.imagekit.io/ku9epk6lrv/nodejs-logo.png?updatedAt=1705363960182",
       },
       {
-        name : '',
+        name : 'NextJS',
         image: "https://ik.imagekit.io/ku9epk6lrv/nextjs-icon.png?updatedAt=1705363960594",
       },
       {
@@ -96,6 +96,30 @@ const data = [
     linkRepoFe: "https://github.com/Irfiyandaabidin/FP-LMS-Binar-Frontend",
     linkRepoBe: "https://github.com/Irfiyandaabidin/FP-LMS-Binar-Backend",
     linkRepoFsw: "",
+  },
+  {
+    id: 4,
+    name: "Product Management",
+    image:
+      "https://ik.imagekit.io/ku9epk6lrv/crud-laravel.png?updatedAt=1705893253678",
+    tool: [
+      {
+        name : 'Laravel',
+        image: "https://ik.imagekit.io/ku9epk6lrv/Laravel-logo.png?updatedAt=1705893629370",
+      },
+      {
+        name : 'Bootstrap',
+        image: "https://ik.imagekit.io/ku9epk6lrv/bootstrap-5.png?updatedAt=1705585269102",
+      },
+      {
+        name: 'PostgreSQL',
+        image: 'https://ik.imagekit.io/ku9epk6lrv/PostgreSQL-Logo.png?updatedAt=1705363960659'
+      }
+    ],
+    description: "The Laravel-built product management application offers users a convenient and secure experience, enabling them to efficiently manage, add, edit, and delete products. It incorporates a robust authentication system for login and registration, ensuring optimal security control in product management.",
+    linkRepoFe: "",
+    linkRepoBe: "",
+    linkRepoFsw: "https://github.com/Irfiyandaabidin/crud-laravel",
   },
 ];
 
